@@ -1,0 +1,95 @@
+#reserva {
+    height: 940px;
+    padding: 50px 0px;
+    background-color: #2858A8;
+  }
+  
+  #reserva h1 {
+    color: #FFFFFF;
+    font-family: "Dotties Chocolate Extra Bold";
+    font-size: 48px;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  #reserva form {
+    margin: 0px 200px;
+  }
+  
+  #reserva form label {
+    color: #FFFFFF;
+    font-family: "Dotties Chocolate Extra Bold";
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+  
+  #reserva form label[value="sim"], #reserva form label[value="não"] {
+    font-family: "Dotties Chocolate Regular";
+    padding-right: 80px;
+  }
+  
+  #reserva form input, #reserva form select {
+    height: 40px;
+    width: 100%;
+    color: #A0A1AA;
+    font-family: "Dotties Vanilla Medium";
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    border: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 0px 20px;
+  }
+  
+  #reserva form input:focus, #reserva form select:focus {
+    outline: none;
+  }
+  
+  #reserva form input[type=radio], #reserva form select[type=radio] {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+  }
+  
+  #reserva form input[type=submit], #reserva form select[type=submit] {
+    display: block;
+    width: 182px;
+    height: 60px;
+    color: #2858A8;
+    background-color: #FFDFA6;
+    text-transform: uppercase;
+    font-family: "Dotties Chocolate Extra Bold";
+    font-size: 24px;
+    margin: 20px auto;
+    padding-top: 5px;
+  }
+  
+  #reserva form input[type=submit]:hover, #reserva form select[type=submit]:hover {
+    background-color: #ffd07c;
+  }
+  
+  #reserva form input[type=submit]:focus, #reserva form select[type=submit]:focus {
+    outline: none;
+  }
+
+@media screen and (max-width: 1023px) {
+
+    #reserva {
+      height: 100%;
+    }
+    #reserva h1 {
+      font-size: 60px;
+    }
+    #reserva form {
+      margin: 0px 80px;
+    }
+    #reserva form label {
+      font-size: 40px;
+    }
+    #reserva form input, #reserva form select {
+      height: 60px;
+      font-size: 30px;
+    }
+}

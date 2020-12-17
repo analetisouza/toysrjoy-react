@@ -1,0 +1,103 @@
+#sobre img {
+    margin-bottom: -30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #sobre #diferenciais {
+    height: 400px;
+    width: 100%;
+    background-color: #FFDFA6;
+  }
+  
+  #sobre #diferenciais h2 {
+    color: #2858A8;
+    margin-top: -400px;
+    margin-left: 712px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-family: "Dotties Chocolate Extra Bold";
+    font-size: 36px;
+  }
+  
+  #sobre #diferenciais ul {
+    width: 440px;
+    color: #2858A8;
+    margin-left: 712px;
+    font-family: "Dotties Vanilla Medium";
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+  
+  #sobre #diferenciais li {
+    margin-bottom: 17px;
+  }
+
+@media screen and (max-width: 1200px) {
+    #sobre img {
+      margin-bottom: 10px;
+      width: 526px;
+      height: 405px;
+    }
+    #sobre #diferenciais {
+      margin-top: -400px;
+      height: 365px;
+    }
+    #sobre #diferenciais h2 {
+      float: right;
+      padding: 20px 0px;
+      margin-right: 205px;
+      margin-left: auto;
+      margin-top: 0px;
+    }
+    #sobre #diferenciais ul {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+
+@media screen and (max-width: 1023px) {
+
+    #sobre {
+      display: block;
+    }
+    #sobre p {
+      width: 100%;
+      padding: 0px 80px;
+    }
+    #sobre img {
+      width: 100%;
+      height: auto;
+    }
+    #sobre #diferenciais {
+      display: -ms-grid;
+      display: grid;
+      background-color: #FFDFA6;
+      margin-top: -25px;
+      margin-bottom: 620px;
+    }
+    #sobre #diferenciais h2 {
+      position: absolute;
+      float: center;
+      text-align: center;
+      font-size: 50px;
+      line-height: 1.25em;
+      padding: 40px;
+      width: 100%;
+      margin: 0px auto;
+      margin-top: 40px;
+      background-color: #FFDFA6;
+    }
+    #sobre #diferenciais ul {
+      display: block;
+      position: absolute;
+      float: center;
+      text-align: center;
+      font-size: 40px;
+      padding: 80px;
+      width: 100%;
+      margin: 0px auto;
+      margin-top: 200px;
+      background-color: #FFDFA6;
+    }
+}

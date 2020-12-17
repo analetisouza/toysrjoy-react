@@ -1,4 +1,5 @@
-import './App.css';
+import './styles/App.css';
+import './styles/Sobre.css';
 
 function Sobre() {
   return (

@@ -1,0 +1,82 @@
+#menu {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 3;
+  }
+  
+  #menu ul {
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+  
+  #menu ul li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 20px;
+  }
+  
+  #menu ul li a {
+    color: #A0A1AA;
+    font-family: "Dotties Vanilla Regular";
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  #menu ul li a:visited {
+    color: #A0A1AA;
+  }
+  
+  #menu ul li a:hover, #menu ul li a:active {
+    color: #2858A8;
+  }
+  
+  #menu #botao-reserva {
+    float: right;
+    margin-right: 110px;
+    font-size: 20px;
+    margin-top: -24px;
+  }
+  
+  #menu #botao-reserva a {
+    color: #FFFFFF;
+    font-family: "Dotties Chocolate Regular";
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0px 27px;
+    padding-top: 4px;
+    background: #2858A8;
+    border: 7px solid #2858A8;
+    border-radius: 5px;
+  }
+  
+  #menu #botao-reserva a:visited {
+    color: #FFFFFF;
+  }
+  
+  #menu #botao-reserva a:hover {
+    background: #3c74d1;
+    border: 7px solid #3c74d1;
+  }
+
+  @media screen and (max-width: 1023px) {
+    #menu {
+      height: 120px;
+    }
+    #menu ul li {
+      display: none;
+    }
+    #menu #botao-reserva {
+      margin-right: 80px;
+      margin-top: 6px;
+      font-size: 40px;
+    }
+    #menu #botao-reserva a {
+      padding-top: 3px;
+      border: 10px solid #2858A8;
+    }
+    #menu #botao-reserva a:hover {
+      border: 10px solid #3c74d1;
+    }
+  }

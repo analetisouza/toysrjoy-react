@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
+import './styles/Reserva.css';
 
 function Reserva() {
   const api = 'https://6h8l3r0pog.execute-api.us-east-1.amazonaws.com';

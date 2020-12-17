@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Dotties Chocolate Regular";
+  src: url(fonts/DottiesChocolate-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dotties Chocolate Medium";
+  src: url(fonts/DottiesChocolate-Medium.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dotties Chocolate Extra Bold";
+  src: url(fonts/DottiesChocolate-ExtraBold.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dotties Chocolate Extra Bold Italic";
+  src: url(fonts/DottiesChocolate-ExtraBoldItalic.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dotties Vanilla Light";
+  src: url(fonts/DottiesVanilla-Light.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dotties Vanilla Light Italic";
+  src: url(fonts/DottiesVanilla-LightItalic.woff);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dotties Vanilla Regular";
+  src: url(fonts/DottiesVanilla-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dotties Vanilla Medium";
+  src: url(fonts/DottiesVanilla-Medium.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=style.css.map */

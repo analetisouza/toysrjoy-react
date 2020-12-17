@@ -1,0 +1,155 @@
+#produtos {
+    margin: 0px auto;
+    margin-top: 100px;
+    max-width: 960px;
+  }
+  
+  #produtos h1 {
+    color: #2858A8;
+    font-family: "Dotties Chocolate Extra Bold";
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  
+  #produtos .produto .imagem {
+    margin-bottom: 100px;
+    display: block;
+  }
+  
+  #produtos .produto .imagem img {
+    height: 346px;
+    width: 346px;
+    position: static;
+    z-index: 1;
+  }
+  
+  #produtos .produto .imagem .preco {
+    width: 160px;
+    height: 152px;
+    position: absolute;
+    z-index: 2;
+    margin-left: -24px;
+    margin-top: 30px;
+  }
+  
+  #produtos .produto .imagem .preco img {
+    margin-top: 200px;
+    margin-left: -56px;
+    width: 160px;
+    height: 152px;
+  }
+  
+  #produtos .produto .imagem .preco h3 {
+    position: absolute;
+    color: #2858A8;
+    font-family: "Dotties Chocolate Extra Bold";
+    font-size: 48px;
+    margin-left: -5px;
+    margin-top: 260px;
+  }
+  
+  #produtos .produto .imagem .preco p {
+    position: absolute;
+    color: #2858A8;
+    font-family: "Dotties Chocolate Extra Bold";
+    font-size: 16px;
+    margin-left: 2px;
+    margin-top: 300px;
+  }
+  
+  #produtos .produto .descricao h2 {
+    color: #2858A8;
+    max-width: 550px;
+    float: right;
+    margin-top: -450px;
+    text-align: right;
+    font-family: "Dotties Chocolate Medium";
+    font-size: 32px;
+    padding-bottom: 32px;
+  }
+  
+  #produtos .produto .descricao p {
+    color: #A0A1AA;
+    max-width: 520px;
+    float: right;
+    margin-top: -380px;
+    text-align: right;
+    font-family: "Dotties Vanilla Medium";
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+  @media screen and (max-width: 1023px) {
+
+    #produtos {
+      text-align: center;
+      margin: 0px auto;
+      margin-bottom: 40px;
+      display: block;
+      width: 100%;
+    }
+    #produtos h1 {
+      display: block;
+    }
+    #produtos .produto {
+      min-width: 300px;
+      padding: 0px 60px;
+      margin: 0px auto;
+      width: 100%;
+    }
+    #produtos .produto .imagem {
+      width: 100%;
+      height: auto;
+      float: center;
+    }
+    #produtos .produto .imagem img {
+      height: 60%;
+      width: 60%;
+    }
+    #produtos .produto .imagem .preco {
+      width: 200px;
+      height: 195px;
+      margin-top: 160px;
+      margin-left: -72px;
+    }
+    #produtos .produto .imagem .preco img {
+      width: 200px;
+      height: 195px;
+    }
+    #produtos .produto .imagem .preco h3 {
+      font-size: 60px;
+      margin-left: 22px;
+      margin-left: 30px;
+      margin-top: 270px;
+    }
+    #produtos .produto .imagem .preco p {
+      font-size: 24px;
+      margin-left: 29px;
+      margin-left: 37px;
+      margin-top: 330px;
+    }
+    #produtos .produto .descricao {
+      display: -ms-grid;
+      display: grid;
+      margin-top: 100px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    #produtos .produto .descricao h2 {
+      text-align: center;
+      float: center;
+      margin: 0px auto;
+    }
+    #produtos .produto .descricao p {
+      max-width: none;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      float: center;
+      margin: 0px auto;
+      padding: 0px 40px;
+      padding-bottom: 60px;
+    }
+}
