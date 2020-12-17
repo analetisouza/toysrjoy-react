@@ -1,0 +1,663 @@
+$amarelo : #FFDFA6;
+$azul : #2858A8;
+$cinza : #A0A1AA;
+$branco : #FFFFFF;
+
+$DCR : "Dotties Chocolate Regular";
+$DCM : "Dotties Chocolate Medium";
+$DCEB : "Dotties Chocolate Extra Bold";
+$DCEBI : "Dotties Chocolate Extra Bold Italic";
+
+$DVL : "Dotties Vanilla Light";
+$DVLI : "Dotties Vanilla Light Italic";
+$DVR : "Dotties Vanilla Regular";
+$DVM : "Dotties Vanilla Medium";
+
+@font-face {
+    font-family: $DCR;
+    src: url(fonts/DottiesChocolate-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $DCM;
+    src: url(fonts/DottiesChocolate-Medium.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $DCEB;
+    src: url(fonts/DottiesChocolate-ExtraBold.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $DCEBI;
+    src: url(fonts/DottiesChocolate-ExtraBoldItalic.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $DVL;
+    src: url(fonts/DottiesVanilla-Light.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $DVLI;
+    src: url(fonts/DottiesVanilla-LightItalic.woff);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $DVR;
+    src: url(fonts/DottiesVanilla-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $DVM;
+    src: url(fonts/DottiesVanilla-Medium.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+
+a {
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+#menu {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: $branco;
+    z-index: 3;
+
+    ul {
+        margin-top: 30px;
+        margin-left: 100px;
+
+        li {
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 20px;
+
+            a {
+                color: $cinza;
+                font-family: $DVR;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:visited {
+                    color: $cinza;
+                }
+                &:hover, &:active {
+                    color: $azul;
+                }
+            }
+        }
+    }
+
+    #botao-reserva {
+        float: right;
+        margin-right: 110px;
+        font-size: 20px;
+        margin-top: -24px;
+
+        a {
+            color: $branco;
+            font-family: $DCR;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0px 27px;
+            padding-top: 4px;
+            background: $azul;
+            border: 7px solid $azul;
+            border-radius: 5px;
+
+            &:visited {
+                color: $branco;
+            }
+            &:hover {
+                background: scale-color($azul, $lightness: 20%);
+                border: 7px solid scale-color($azul, $lightness: 20%);
+            }
+        }
+    }
+}
+
+#home {
+    img {
+        margin-top: 80px;
+        margin-left: 120px;
+        float: center;
+        width: 439px;
+        height: 349px;
+    }
+
+    h1 {
+        width: 460px;
+        margin-top: 200px;
+        margin-right: 100px;
+        color: $amarelo;
+        font-family: $DCEBI;
+        font-size: 48px;
+        line-height: 1.1em;
+        text-align: center;
+        float: right;
+    }
+
+    #collection {
+        img {
+            display: block;
+            width: 438px;
+            height: 200px;
+            margin-top: -50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+#sobre {
+
+    p {
+        width: 788px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: block;
+        text-align: center;
+        color: $cinza;
+        float: center;
+        text-align: center;
+        font-family: $DVLI;
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+
+    img {
+        margin-bottom: -30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #diferenciais {
+        height: 400px;
+        width: 100%;
+        background-color: $amarelo;
+
+        h2 {
+            color: $azul;
+            margin-top: -400px;
+            margin-left: 712px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            font-family: $DCEB;
+            font-size: 36px;
+        }
+        ul {
+            width: 440px;
+            color: $azul;
+            margin-left: 712px;
+            font-family: $DVM;
+            font-size: 20px;
+            line-height: 1.5em;
+        }
+
+        li {
+            margin-bottom: 17px;
+        }
+    }
+
+}
+
+#produtos {
+
+    margin: 0px auto;
+    margin-top: 100px;
+    max-width: 960px;
+
+    h1 {
+        color: $azul;
+        font-family: $DCEB;
+        font-size: 48px;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .produto {
+
+        .imagem {
+
+            margin-bottom: 100px;
+            display: block;
+        
+            img {
+                height: 346px;
+                width: 346px;
+                position: static;
+                z-index: 1;
+            }
+
+            .preco {
+                width: 160px;
+                height: 152px;
+                position: absolute;
+                z-index: 2;
+                margin-left: -24px;
+                margin-top: 30px;
+        
+                img {
+                    margin-top: 200px;
+                    margin-left: -56px;
+                    width: 160px;
+                    height: 152px;
+                }
+        
+                h3 {
+                    position: absolute;
+                    color: $azul;
+                    font-family: $DCEB;
+                    font-size: 48px;
+                    margin-left: -5px;
+                    margin-top: 260px;
+                }
+        
+                p {
+                    position: absolute;
+                    color: $azul;
+                    font-family: $DCEB;
+                    font-size: 16px;
+                    margin-left: 2px;
+                    margin-top: 300px;
+                }
+            }
+        }
+
+        .descricao {
+                    
+            h2 {
+                color: $azul;
+                max-width: 550px;
+                float: right;
+                margin-top: -450px;
+                text-align: right;
+                font-family: $DCM;
+                font-size: 32px;
+                padding-bottom: 32px;
+            }
+            
+            p {
+                color: $cinza;
+                max-width: 520px;
+                float: right;
+                margin-top: -380px;
+                text-align: right;
+                font-family: $DVM;
+                font-size: 20px;
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+
+#reserva {
+    height: 940px;
+    padding: 50px 0px;
+    background-color: $azul;
+
+    h1 {
+        color: $branco;
+        font-family: $DCEB;
+        font-size: 48px;
+        text-align: center;
+        padding: 50px;
+    }
+    form {
+        margin: 0px 200px;
+
+        label {
+            color: $branco;
+            font-family: $DCEB;
+            font-size: 24px;
+            line-height: 1.5em;
+
+            &[value="sim"], &[value="não"] {
+                font-family: $DCR;
+                padding-right: 80px;
+            }
+        }
+
+        input, select {
+            height: 40px;
+            width: 100%;
+            color: $cinza;
+            font-family: $DVM;
+            font-size: 16px;
+            background-color: $branco;
+            border-color: $branco;
+            border: 5px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            padding: 0px 20px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &[type=radio] {
+                height: 20px;
+                width: 20px;
+                margin-right: 20px;
+            }
+
+            &[type=submit]{
+                display: block;
+                width: 182px;
+                height: 60px;
+                color: $azul;
+                background-color: $amarelo;
+                text-transform: uppercase;
+                font-family: $DCEB;
+                font-size: 24px;
+                margin: 20px auto;
+                padding-top: 5px;
+
+                &:hover {
+                    background-color: scale-color($amarelo, $lightness: -10%);
+                }
+
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    height: 200px;
+    background-color: $amarelo;
+    width: 100%;
+
+    img {
+        display: block;
+        width: 384px;
+        padding: 10px;
+        padding-top: 50px;
+        margin: 0px auto;
+    }
+
+    p {
+        color: $azul;
+        font-family: $DVL;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    #home {
+        img {
+            margin-left: 60px;
+        }
+
+        h1 {
+            margin-right: 40px;
+        }
+    }
+
+    #sobre {
+        img {
+            margin-bottom: 10px;
+            width: 526px;
+            height: 405px;
+        }
+
+        #diferenciais {
+            margin-top: -400px;
+            height: 365px;
+
+
+            h2{
+                float: right;
+                padding: 20px 0px;
+                margin-right: 205px;
+                margin-left: auto;
+                margin-top: 0px;
+            }
+            ul {
+                margin-left: auto;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    #menu {
+        height: 120px; 
+
+        ul li {
+            display: none;
+        }  
+        
+        #botao-reserva {
+            margin-right: 80px;
+            margin-top: 6px;
+            font-size: 40px;
+
+            a {
+                padding-top: 3px;
+                border: 10px solid $azul;
+
+                &:hover {
+                    border: 10px solid scale-color($azul, $lightness: 20%);
+                }
+            }
+        }
+    }
+
+    #home {
+        img {
+            margin: 0px auto;
+            margin-top: 120px;
+            float: center;
+            padding: 0px 60px;
+            width: 100%;
+        }
+        h1 {
+            margin: 0px auto;
+            margin-top: 40px;
+            float: center;
+            padding: 0px 60px;
+            width: 100%;
+        }
+    }
+
+    #sobre {
+        
+        display: block;
+
+        p {
+            width: 100%;
+            padding: 0px 80px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        #diferenciais {
+            display: grid;
+            background-color: $amarelo;
+            margin-top: -25px;
+            margin-bottom: 620px;
+
+            h2 {
+                position: absolute;
+                float: center;
+                text-align: center;
+                font-size: 50px;
+                line-height: 1.25em;
+                padding: 40px;
+                width: 100%;
+                margin: 0px auto;
+                margin-top: 40px;
+                background-color: $amarelo;
+            }
+
+            ul {
+                display: block;
+                position: absolute;
+                float: center;
+                text-align: center;
+                font-size: 40px;
+                padding: 80px;
+                width: 100%;
+                margin: 0px auto;
+                margin-top: 200px;
+                background-color: $amarelo;
+            }
+        }
+    }
+
+    #produtos {
+
+        text-align: center;
+        margin: 0px auto;
+        margin-bottom: 40px;
+        display: block;
+        width: 100%;
+
+        h1 {
+            display: block;
+        }
+
+        .produto {
+
+            min-width: 300px;
+            padding: 0px 60px;
+            margin: 0px auto;
+            width: 100%;
+
+            .imagem {
+
+                width: 100%;
+                height: auto;
+                float: center;
+
+                img {
+                    height: 60%;
+                    width: 60%;
+                }
+    
+
+                .preco {
+                    width: 200px;
+                    height: 195px;
+                    margin-top: 160px;
+                    margin-left: -72px;
+
+                    img {
+                        width: 200px;
+                        height: 195px;
+                    }
+
+                    h3 {
+                        font-size: 60px;
+                        margin-left: 22px;
+                        margin-left: 30px;
+                        margin-top: 270px;
+                    }
+
+                    p {
+                        font-size: 24px;
+                        margin-left: 29px;
+                        margin-left: 37px;
+                        margin-top: 330px;
+                    }   
+                }
+            }
+
+            .descricao {
+
+                display: grid;
+                margin-top: 100px;
+                justify-content: center;
+
+                h2 {
+                    text-align: center;
+                    float: center;
+                    margin: 0px auto;
+                }
+
+                p {
+                    max-width: none;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    float: center;
+                    margin: 0px auto;
+                    padding: 0px 40px;
+                    padding-bottom: 60px;
+                }
+            }
+        }
+    }
+
+    #reserva {
+        height: 100%;
+
+        h1 {
+            font-size: 60px;
+        }
+
+        form {
+            margin: 0px 80px;
+
+            label {
+                font-size: 40px;
+            }
+
+            input, select {
+
+                height: 60px;
+                font-size: 30px;
+            }
+        }
+    }
+}

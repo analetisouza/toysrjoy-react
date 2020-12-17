@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Menu from './components/Menu';
+import Home from './components/Home';
+import Sobre from './components/Sobre';
+import Produtos from './components/Produtos';
+import Reserva from './components/Reserva';
+import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Menu />
+    <Home />
+    <Sobre />
+    <Produtos />
+    <Reserva />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

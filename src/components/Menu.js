@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Menu() {
   return (
-    <div className="App">
-      <header>
+    <div className="Menu">
         <nav id="menu">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -15,10 +13,8 @@ function App() {
                  <a href="#reserva">Reservar</a>
             </div>
         </nav>
-    </header>
-
     </div>
   );
 }
 
-export default App;
+export default Menu;
